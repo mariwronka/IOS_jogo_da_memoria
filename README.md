@@ -9,6 +9,6 @@ Encontrar todos os pares com a menor quantidade de movimentos.
 
 ## Como construi o Jogo
 * Criei uma classe com o nome de `game` que gerencia todo o processo de criação do dech de cartas;
-* Adicionei uma variável de contator de movimentos a minha view, chamado `flipCountLabel`, para tornar o jogo mais desafiante;
+* Adicionei um contator de movimentos, chamado `flipCountLabel`, para tornar o jogo mais desafiante;
 * Criei um botão `Jogar de Novo` onde a action só está disponível quando todas as cartas estiveram setadas com a opção `.isMatched`
 
