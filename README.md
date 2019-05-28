@@ -1,4 +1,4 @@
-# IOS_jogo_da_memoria
+# Jogo da Memória
 É um jogo simples de cartas feito em iOS, usado para testar a memória dos jogadores.
 
 ### Como Jogar
