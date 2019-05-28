@@ -12,3 +12,6 @@ Encontrar todos os pares com a menor quantidade de movimentos.
 * Adicionei um contator de movimentos, chamado `flipCountLabel`, para tornar o jogo mais desafiante;
 * Criei um botão `Jogar de Novo` onde a action só está disponível quando todas as cartas estiveram setadas com a opção `.isMatched`
 
+## 
+
+![game_memory](https://user-images.githubusercontent.com/12899445/58518337-31581380-8185-11e9-8da7-e3ed2c021921.png)
