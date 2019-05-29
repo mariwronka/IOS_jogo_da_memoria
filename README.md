@@ -8,7 +8,7 @@ O jogador deve encontrar todos os pares de cartas, revelando as cartas de duas e
 Encontrar todos os pares com a menor quantidade de movimentos.
 
 ## Como construi o Jogo
-* Criei uma classe com o nome de `game` que gerencia todo o processo de criação do dech de cartas;
+* Criei uma classe com o nome de `game` que gerencia todo o processo de criação do deck de cartas;
 * Adicionei um contator de movimentos, chamado `flipCountLabel`, para tornar o jogo mais desafiante;
 * Criei um botão `Jogar de Novo` onde a action só está disponível quando todas as cartas estiveram setadas com a opção `.isMatched`
 
