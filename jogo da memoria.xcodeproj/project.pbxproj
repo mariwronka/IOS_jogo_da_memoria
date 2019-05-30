@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D29369FA229EAEA600C056EA /* CardTextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29369F9229EAEA600C056EA /* CardTextProvider.swift */; };
+		D29369FC229ECBE800C056EA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29369FB229ECBE800C056EA /* WelcomeViewController.swift */; };
 		D2EA27252299758C00C2C166 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EA27242299758C00C2C166 /* AppDelegate.swift */; };
-		D2EA27272299758C00C2C166 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EA27262299758C00C2C166 /* ViewController.swift */; };
+		D2EA27272299758C00C2C166 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EA27262299758C00C2C166 /* GameViewController.swift */; };
 		D2EA272A2299758C00C2C166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2EA27282299758C00C2C166 /* Main.storyboard */; };
 		D2EA272C2299758D00C2C166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2EA272B2299758D00C2C166 /* Assets.xcassets */; };
 		D2EA272F2299758D00C2C166 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2EA272D2299758D00C2C166 /* LaunchScreen.storyboard */; };
@@ -17,9 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D29369F9229EAEA600C056EA /* CardTextProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTextProvider.swift; sourceTree = "<group>"; };
+		D29369FB229ECBE800C056EA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		D2EA27212299758C00C2C166 /* jogo da memoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jogo da memoria.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2EA27242299758C00C2C166 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2EA27262299758C00C2C166 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2EA27262299758C00C2C166 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		D2EA27292299758C00C2C166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2EA272B2299758D00C2C166 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2EA272E2299758D00C2C166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 				D2EA27302299758D00C2C166 /* Info.plist */,
 				D2EA27382299A0EA00C2C166 /* game.swift */,
 				D2EA273A2299AAB100C2C166 /* Extensions.swift */,
+				D29369F9229EAEA600C056EA /* CardTextProvider.swift */,
+				D29369FB229ECBE800C056EA /* WelcomeViewController.swift */,
 			);
 			path = "jogo da memoria";
 			sourceTree = "<group>";
@@ -71,7 +77,7 @@
 		D2EA27372299774E00C2C166 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D2EA27262299758C00C2C166 /* ViewController.swift */,
+				D2EA27262299758C00C2C166 /* GameViewController.swift */,
 				D2EA272B2299758D00C2C166 /* Assets.xcassets */,
 				D2EA272D2299758D00C2C166 /* LaunchScreen.storyboard */,
 			);
@@ -150,7 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2EA27392299A0EA00C2C166 /* game.swift in Sources */,
-				D2EA27272299758C00C2C166 /* ViewController.swift in Sources */,
+				D29369FA229EAEA600C056EA /* CardTextProvider.swift in Sources */,
+				D2EA27272299758C00C2C166 /* GameViewController.swift in Sources */,
+				D29369FC229ECBE800C056EA /* WelcomeViewController.swift in Sources */,
 				D2EA27252299758C00C2C166 /* AppDelegate.swift in Sources */,
 				D2EA273B2299AAB100C2C166 /* Extensions.swift in Sources */,
 			);

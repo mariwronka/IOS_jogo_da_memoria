@@ -8,13 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GameViewController: UIViewController {
     
     @IBOutlet weak var buttonNewGame: UIButton!
 
     @IBOutlet weak var flipCountLabel: UILabel!
 
     @IBOutlet var buttonsArray: [UIButton]!
+    
+    var animete = false
+    
+    var cardTextProvider: CardTextProvider!
     
     @IBAction func touchNewGame(_ sender: UIButton) {
         for index in game.cards.indices {
@@ -35,10 +39,6 @@ class ViewController: UIViewController {
     
     var flipCount = 0 { didSet { flipCountLabel.text = "Flips: \(flipCount)" } }
     
-    var emojisOptions: Array<String> = ["🦊", "🦋", "🐼", "🐤",  "🐸", "🐹", "🐻"]
-    
-    var emojis = [Int:String]()
-    
     lazy var game = Game(numberOfPairOfCards: buttonsArray.count / 2)
 
     override func viewDidLoad() {
@@ -55,32 +55,19 @@ class ViewController: UIViewController {
     }
     
     func updateViewFromModel() {
-        for index in game.cards.indices {
+        for (index, card) in game.cards.enumerated() {
             let button = self.buttonsArray[index]
-            let card = self.game.cards[index]
             
             if card.cardState == .matched {
                 button.setBackgroundImage(nil, for: .normal)
                 button.setTitle(" ", for: .normal)
             } else if card.cardState == .front {
                 button.setBackgroundImage(UIImage(named: "card_front.png"), for: .normal)
-                button.setTitle(emoji(for: card), for: .normal)
+                button.setTitle(self.cardTextProvider.text(for: card.identifier), for: .normal)
             } else {
                 button.setBackgroundImage(UIImage(named: "card_back.png"), for: .normal)
                 button.setTitle(" ", for: .normal)
             }
         }
     }
-
-    
-    func emoji(for card: Card) -> String {
-        if let emoji = emojis[card.identifier] { return emoji }
-        
-        let emoji = emojisOptions.removeRandom()
-        emojis[card.identifier] = emoji
-        
-        return emoji
-    }
-    
 }
-
