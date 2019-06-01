@@ -188,6 +188,7 @@
                         <outletCollection property="buttonsArray" destination="MK9-dP-PWK" collectionClass="NSMutableArray" id="rtp-xb-K5y"/>
                         <outletCollection property="buttonsArray" destination="o5r-ia-Npi" collectionClass="NSMutableArray" id="Ba8-zg-8jd"/>
                         <outletCollection property="buttonsArray" destination="ONi-E8-VaZ" collectionClass="NSMutableArray" id="46Q-KJ-TVA"/>
+                        <segue destination="jRA-LD-9kp" kind="show" identifier="win-segue" id="mwf-J8-Uxo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -201,6 +202,20 @@
                     <view key="view" contentMode="scaleToFill" id="tXq-Ix-Ac1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trs-eJ-qOi">
+                                <rect key="frame" x="47" y="423" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Jogar de Novo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchNewGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YWm-OW-b9v"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="tUO-vi-iar"/>
                     </view>

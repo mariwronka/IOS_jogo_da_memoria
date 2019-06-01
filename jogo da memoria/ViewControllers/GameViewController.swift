@@ -54,11 +54,11 @@ class GameViewController: UIViewController {
                 self.updateViewFromModel()
                 self.flipCount += 1
                 
-//                if self.game.win {
-//                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
-//                        self.performSegue(withIdentifier: "win-segue", sender: nil)
-//                    })
-//                }
+                if self.game.win {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+                        self.performSegue(withIdentifier: "win-segue", sender: nil)
+                    })
+                }
             }
         }
     }
