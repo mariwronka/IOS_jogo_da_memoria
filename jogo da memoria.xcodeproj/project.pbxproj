@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D23190F122A22BBD0091B9AD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23190F022A22BBD0091B9AD /* Card.swift */; };
-		D23190F322A22D060091B9AD /* UICard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23190F222A22D060091B9AD /* UICard.swift */; };
 		D29369FA229EAEA600C056EA /* CardTextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29369F9229EAEA600C056EA /* CardTextProvider.swift */; };
 		D29369FC229ECBE800C056EA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29369FB229ECBE800C056EA /* WelcomeViewController.swift */; };
 		D2EA27252299758C00C2C166 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EA27242299758C00C2C166 /* AppDelegate.swift */; };
@@ -22,7 +21,6 @@
 
 /* Begin PBXFileReference section */
 		D23190F022A22BBD0091B9AD /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		D23190F222A22D060091B9AD /* UICard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICard.swift; sourceTree = "<group>"; };
 		D29369F9229EAEA600C056EA /* CardTextProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTextProvider.swift; sourceTree = "<group>"; };
 		D29369FB229ECBE800C056EA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		D2EA27212299758C00C2C166 /* jogo da memoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jogo da memoria.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +59,6 @@
 			children = (
 				D23190F022A22BBD0091B9AD /* Card.swift */,
 				D2EA273A2299AAB100C2C166 /* Extensions.swift */,
-				D23190F222A22D060091B9AD /* UICard.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,7 +189,6 @@
 				D29369FC229ECBE800C056EA /* WelcomeViewController.swift in Sources */,
 				D2EA27252299758C00C2C166 /* AppDelegate.swift in Sources */,
 				D2EA273B2299AAB100C2C166 /* Extensions.swift in Sources */,
-				D23190F322A22D060091B9AD /* UICard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

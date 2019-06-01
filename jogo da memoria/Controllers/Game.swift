@@ -14,6 +14,12 @@ class Game {
     
     var indexOfSelectedCard: Int?
     
+    var countMatches: Int = 0
+    
+    var pairCount: Int = 0
+    
+    var win: Bool = false
+    
     func chooseCard(card index: Int) {
         if cards.indices.contains(index), cards[index].isMatched == false {
             
@@ -22,6 +28,8 @@ class Game {
                 if cards[matchedIndex].identifier == cards[index].identifier {
                     cards[matchedIndex].isMatched = true
                     cards[index].isMatched = true
+                    countMatches += 1
+                    if self.countMatches == self.pairCount { win = true }
                 }
                 
                 cards[index].isFaceUp = true
@@ -38,11 +46,19 @@ class Game {
     }
     
     init(numberOfPairOfCards: Int) {
+        self.pairCount = numberOfPairOfCards
         for index in 0 ..< numberOfPairOfCards {
             let card =  Card(identifier: index)
             self.cards += [card, card]
-            cards.shuffle()
         }
+        cards.shuffle()
+    }
+    
+    func restart(){
+        self.indexOfSelectedCard = nil
+        self.countMatches = 0
+        self.pairCount = 0
+        self.win = false
     }
     
 }

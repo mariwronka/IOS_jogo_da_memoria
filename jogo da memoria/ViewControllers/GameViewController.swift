@@ -48,22 +48,35 @@ class GameViewController: UIViewController {
     
     @IBAction func touchCard(_ sender: UIButton) {
         if let cardNumber = buttonsArray.firstIndex(of: sender) {
-            game.chooseCard(card: cardNumber)
-            updateViewFromModel()
-            flipCount += 1 
+            if game.cards[cardNumber].cardState == .back {
+                
+                self.game.chooseCard(card: cardNumber)
+                self.updateViewFromModel()
+                self.flipCount += 1
+                
+//                if self.game.win {
+//                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+//                        self.performSegue(withIdentifier: "win-segue", sender: nil)
+//                    })
+//                }
+            }
         }
     }
     
     func updateViewFromModel() {
         for (index, card) in game.cards.enumerated() {
             let button = self.buttonsArray[index]
+            let text = self.cardTextProvider.text(for: card.identifier)
             
-            if card.cardState == .matched {
+            if self.game.win {
+                button.setBackgroundImage(UIImage(named: "card_front.png"), for: .normal)
+                button.setTitle(text, for: .normal)
+            } else if card.cardState == .matched {
                 button.setBackgroundImage(nil, for: .normal)
                 button.setTitle(" ", for: .normal)
             } else if card.cardState == .front {
                 button.setBackgroundImage(UIImage(named: "card_front.png"), for: .normal)
-                button.setTitle(self.cardTextProvider.text(for: card.identifier), for: .normal)
+                button.setTitle(text, for: .normal)
             } else {
                 button.setBackgroundImage(UIImage(named: "card_back.png"), for: .normal)
                 button.setTitle(" ", for: .normal)
