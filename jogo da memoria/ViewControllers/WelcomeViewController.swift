@@ -18,8 +18,8 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        buttonCuteAnimails.layer.cornerRadius = 10
-        buttonNumbers.layer.cornerRadius = 10
+        //buttonCuteAnimails.layer.cornerRadius = 10
+        //buttonNumbers.layer.cornerRadius = 10
     }
 
     @IBAction func touchCuteAnimails(_ sender: Any) {

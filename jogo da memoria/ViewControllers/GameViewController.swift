@@ -10,8 +10,6 @@ import UIKit
 
 class GameViewController: UIViewController {
     
-    @IBOutlet weak var buttonNewGame: UIButton!
-
     @IBOutlet weak var flipCountLabel: UILabel!
 
     @IBOutlet var buttonsArray: [UIButton]!
@@ -41,11 +39,6 @@ class GameViewController: UIViewController {
     
     lazy var game = Game(numberOfPairOfCards: buttonsArray.count / 2)
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        buttonNewGame.layer.cornerRadius = 10
-    }
-    
     @IBAction func touchCard(_ sender: UIButton) {
         if let cardNumber = buttonsArray.firstIndex(of: sender) {
             if game.cards[cardNumber].cardState == .back {
