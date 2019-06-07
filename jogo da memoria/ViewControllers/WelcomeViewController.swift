@@ -10,17 +10,8 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
     
-    @IBOutlet weak var buttonCuteAnimails: UIButton!
-    @IBOutlet weak var buttonNumbers: UIButton!
-    
     private let gameSegue = "show-game"
     var cardTextProvires: CardTextProvider?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        //buttonCuteAnimails.layer.cornerRadius = 10
-        //buttonNumbers.layer.cornerRadius = 10
-    }
 
     @IBAction func touchCuteAnimails(_ sender: Any) {
         self.cardTextProvires = CuteAnimalsEmojiProvider()

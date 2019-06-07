@@ -356,8 +356,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="IqO-mc-IQV"/>
                     <connections>
-                        <outlet property="buttonCuteAnimails" destination="D6c-XO-Jcd" id="HcG-3n-QoR"/>
-                        <outlet property="buttonNumbers" destination="pM3-x2-Ksa" id="h9p-x1-gKH"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="show-game" id="E0v-qw-S5W"/>
                     </connections>
                 </viewController>
