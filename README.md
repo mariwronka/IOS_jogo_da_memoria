@@ -14,4 +14,4 @@ Encontrar todos os pares com a menor quantidade de movimentos.
 
 ## 
 
-![game_memory](https://user-images.githubusercontent.com/12899445/59082632-750bf500-88ca-11e9-9864-473d03b30ed9.png)
+![game_memory](https://user-images.githubusercontent.com/12899445/59175457-03cb7c80-8b2c-11e9-84f7-baf53d42e0fa.png)
